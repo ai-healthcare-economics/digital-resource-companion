@@ -43,6 +43,6 @@ The case demonstrates structured reasoning. It does not constitute empirical evi
 
 An interactive synthetic version of this case is available in the GitHub Pages layer:
 
-`https://ai-healthcare-economy.github.io/ai-healthcare-economics-companion/demos/AIHE-CASE02/`
+`https://ai-healthcare-economics.github.io/digital-resource-companion/demos/AIHE-CASE02/`
 
 Use the browser version for exploration and teaching. Use the canonical workbook, data, and decision records for governed institutional analysis.

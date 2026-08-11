@@ -22,7 +22,7 @@ In the repository on GitHub:
 
 For the current organization and repository name, the expected site address is:
 
-`https://ai-healthcare-economy.github.io/ai-healthcare-economics-companion/`
+`https://ai-healthcare-economics.github.io/digital-resource-companion/`
 
 ## Design principle
 
