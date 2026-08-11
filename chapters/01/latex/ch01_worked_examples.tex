@@ -1,0 +1,176 @@
+% Chapter 1 worked example. Included by ch01_resources.tex.
+\section{Worked Example: Emergency-Triage Intervention Portfolio}
+\label{sec:comp-ch01-worked-example}
+
+\subsection{Purpose and Status}
+This worked example demonstrates how the methods in Chapter~1 can be
+translated into a reviewable institutional decision. All numerical inputs are
+synthetic unless a source is identified explicitly. They are intended to show the
+logic of the analysis, not to report empirical findings or establish a universal
+threshold. Local use requires replacement of the assumptions with current,
+versioned evidence and approval through the relevant clinical, managerial,
+economic, legal, technical, and governance processes.
+
+A regional public hospital is considering an AI-supported emergency-triage service after repeated crowding, prolonged time to first clinical assessment, and concern about delayed recognition of deteriorating patients. The proposal must be assessed as a complete intervention rather than as a prediction model. 
+
+\subsection{Decision Problem and Comparators}
+\textbf{Decision problem.} Should the hospital pilot an AI-supported triage pathway, strengthen the current pathway through staffing and protocol redesign, or adopt a lower-complexity rules-based alternative?
+
+The comparator set is deliberately broader than the existing pathway. This prevents
+a new technology from receiving a lower evidentiary threshold than staffing,
+workflow, shared-service, conventional digital, or no-change alternatives.
+
+\begin{longtable}{@{}p{0.08\textwidth}p{0.84\textwidth}@{}}
+\caption{Comparators for the Chapter 1 worked example}
+\label{tab:comp-ch01-comparators}\\
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Current triage with existing staffing \\
+2 & Additional triage staffing during peak periods \\
+3 & Registration and streaming redesign \\
+4 & A conventional rules-based early-warning score \\
+5 & AI-supported prioritisation with human confirmation \\
+\end{longtable}
+
+\subsection{Model and Decision Structure}
+The analytical structure should follow the decision rather than the available
+software. The team should map the causal pathway from intervention input to
+information, human decision, action, outcome, resource consequence, and review.
+The structure should also identify capacity constraints, uncertainty, subgroup
+variation, implementation requirements, and events that would change the
+recommendation.
+
+A compact quantitative relationship used in this example is:
+\begin{equation}
+\text{Incremental value hypothesis: }\quad \Delta V = f(\Delta O,\,\Delta C,\,\Delta W,\,\Delta R)
+\label{eq:comp-ch01-key-relationship}
+\end{equation}
+The equation is an organizing aid rather than a substitute for disaggregated evidence,
+qualitative findings, or mandatory safeguards. Its variables and interpretation must
+be defined in the local protocol.
+
+\subsection{Synthetic Parameters and Evidence Sources}
+Table~\ref{tab:comp-ch01-parameters} provides the base-case inputs. A
+production analysis should add parameter distributions, correlations, structural
+alternatives, data dates, system versions, and evidence-confidence ratings.
+
+\begin{longtable}{@{}p{0.32\textwidth}p{0.22\textwidth}p{0.38\textwidth}@{}}
+\caption{Synthetic parameters for the Chapter 1 worked example}
+\label{tab:comp-ch01-parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Annual eligible attendances & 72,000 & Local activity report \\
+Baseline median time to first assessment & 84 minutes & Emergency-department dashboard \\
+High-risk event prevalence & 4.5\% & Retrospective cohort \\
+AI sensitivity at proposed threshold & 0.88 & External evidence; local verification required \\
+AI specificity at proposed threshold & 0.72 & External evidence; local verification required \\
+Incremental annual programme cost & EUR 310,000 & Local lifecycle-cost estimate \\
+Available additional rapid-assessment capacity & 18 patients/day & Workforce and space assessment \\
+\end{longtable}
+
+\subsection{Step-by-Step Analysis}
+The sequence below is intended to make the analysis reproducible and to ensure
+that evidence, economics, governance, and implementation develop together.
+
+\begin{longtable}{@{}p{0.07\textwidth}p{0.55\textwidth}p{0.30\textwidth}@{}}
+\caption{Analytical sequence}
+\label{tab:comp-ch01-analysis-steps}\\
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Map the present pathway and identify the decision window in which prioritisation could still change care. & Evidence and responsible owner to be recorded \\
+2 & Compare all realistic alternatives before assigning value to the AI option. & Evidence and responsible owner to be recorded \\
+3 & Represent the intervention bundle: data availability, interface, triage-nurse review, escalation, rapid-assessment capacity, monitoring, and fallback. & Evidence and responsible owner to be recorded \\
+4 & Estimate false-positive workload and false-negative consequences at the proposed threshold. & Evidence and responsible owner to be recorded \\
+5 & Test whether downstream capacity can absorb the additional patients identified as high risk. & Evidence and responsible owner to be recorded \\
+6 & Define a reversible pilot with clinical, operational, economic, equity, and trust indicators. & Evidence and responsible owner to be recorded \\
+\end{longtable}
+
+\subsection{Illustrative Outputs}
+The outputs in Table~\ref{tab:comp-ch01-outputs} show how technical,
+clinical, operational, economic, equity, and governance findings should be kept
+visible rather than compressed into a single favourable or unfavourable score.
+
+\begin{longtable}{@{}p{0.30\textwidth}p{0.24\textwidth}p{0.38\textwidth}@{}}
+\caption{Illustrative model and decision outputs}
+\label{tab:comp-ch01-outputs}\\
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Expected high-risk alerts per day & Approximately 67 & Includes true and false positive alerts \\
+Additional patients requiring rapid review & Approximately 35/day & Exceeds currently available capacity without redesign \\
+Primary value mechanism & Earlier review of high-risk patients & Dependent on response capacity \\
+Main economic risk & Unusable alerts and displaced staff time & May increase rather than reduce delay \\
+Preferred initial decision & Redesign and limited pilot & Not unrestricted deployment \\
+\end{longtable}
+
+\subsection{Sensitivity, Uncertainty, and Subgroups}
+At minimum, the completed analysis should vary the parameters most likely to
+change the decision, test at least one credible alternative model structure, and
+report subgroup results separately where performance, access, response, burden,
+or opportunity cost may differ. Deterministic analysis should identify thresholds;
+probabilistic analysis should be used where credible parameter distributions and
+correlations are available. Scenario analysis is preferable when structural or
+future uncertainty cannot be represented defensibly by one probability model.
+
+The record should distinguish uncertainty that can be reduced through evidence,
+uncertainty that can be managed through safeguards, and uncertainty that remains
+too consequential to accept. Missing evidence should not be represented as an
+average or neutral value without justification.
+
+\subsection{Interpretation and Recommendation}
+Proceed only with a redesigned, time-limited pilot that adds response capacity and compares the AI pathway with a staffing-and-streaming alternative. The model should remain advisory, with triage-nurse confirmation and a documented fallback.
+
+The recommendation is conditional rather than permanent. It applies only to the
+specified population, setting, intervention configuration, evidence cut-off, and
+version. The following conditions should be incorporated into the approval,
+contract, implementation, monitoring, or renewal record:
+
+\begin{itemize}
+ \item complete local calibration and silent-mode evaluation.
+ \item demonstrate that rapid-assessment capacity can absorb expected alert volume.
+ \item define subgroup and balancing measures, including delay among patients deprioritised by the system.
+ \item cap total pilot expenditure and preserve the ability to stop without service disruption.
+ \item review at 8 and 16 weeks using predefined proceed, redesign, restrict, or stop criteria.
+\end{itemize}
+
+\subsection{Decision Statement}
+\begin{quote}
+For the specified decision problem and comparator set, the institution should
+\emph{[proceed / proceed with conditions / redesign / pilot / restrict / defer /
+replace / retire]}. The decision applies to \emph{[population, setting, version,
+and evidence period]}, is owned by \emph{[accountable authority]}, and will be
+reviewed on \emph{[date]} or earlier if \emph{[trigger events]} occur. The
+evidence, assumptions, unresolved uncertainty, mandatory safeguards, monitoring
+thresholds, and exit arrangements are recorded in the accompanying dossier.
+\end{quote}

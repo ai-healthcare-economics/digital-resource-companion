@@ -1,0 +1,176 @@
+% Chapter 13 worked example. Included by ch13_resources.tex.
+\section{Worked Example: Circular Stewardship of AI Compute and Clinical Infrastructure}
+\label{sec:comp-ch13-worked-example}
+
+\subsection{Purpose and Status}
+This worked example demonstrates how the methods in Chapter~13 can be
+translated into a reviewable institutional decision. All numerical inputs are
+synthetic unless a source is identified explicitly. They are intended to show the
+logic of the analysis, not to report empirical findings or establish a universal
+threshold. Local use requires replacement of the assumptions with current,
+versioned evidence and approval through the relevant clinical, managerial,
+economic, legal, technical, and governance processes.
+
+A health system is expanding AI-enabled imaging and analytics. Several servers are underutilized, cooling demand is increasing, equipment is approaching support milestones, and suppliers offer different maintenance, take-back, and product-information arrangements. 
+
+\subsection{Decision Problem and Comparators}
+\textbf{Decision problem.} Which combination of demand prevention, shared use, maintenance, modernization, and recovery provides the greatest safe and sustainable value?
+
+The comparator set is deliberately broader than the existing pathway. This prevents
+a new technology from receiving a lower evidentiary threshold than staffing,
+workflow, shared-service, conventional digital, or no-change alternatives.
+
+\begin{longtable}{@{}p{0.08\textwidth}p{0.84\textwidth}@{}}
+\caption{Comparators for the Chapter 13 worked example}
+\label{tab:comp-ch13-comparators}\\
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Continue current decentralized infrastructure \\
+2 & Consolidate and share existing capacity \\
+3 & Replace with new local infrastructure \\
+4 & Use a regional managed service \\
+5 & Reduce model and data demand before adding capacity \\
+\end{longtable}
+
+\subsection{Model and Decision Structure}
+The analytical structure should follow the decision rather than the available
+software. The team should map the causal pathway from intervention input to
+information, human decision, action, outcome, resource consequence, and review.
+The structure should also identify capacity constraints, uncertainty, subgroup
+variation, implementation requirements, and events that would change the
+recommendation.
+
+A compact quantitative relationship used in this example is:
+\begin{equation}
+I_R=\frac{R}{Q},\qquad R_{\mathrm{total}}=I_R\times Q
+\label{eq:comp-ch13-key-relationship}
+\end{equation}
+The equation is an organizing aid rather than a substitute for disaggregated evidence,
+qualitative findings, or mandatory safeguards. Its variables and interpretation must
+be defined in the local protocol.
+
+\subsection{Synthetic Parameters and Evidence Sources}
+Table~\ref{tab:comp-ch13-parameters} provides the base-case inputs. A
+production analysis should add parameter distributions, correlations, structural
+alternatives, data dates, system versions, and evidence-confidence ratings.
+
+\begin{longtable}{@{}p{0.32\textwidth}p{0.22\textwidth}p{0.38\textwidth}@{}}
+\caption{Synthetic parameters for the Chapter 13 worked example}
+\label{tab:comp-ch13-parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Average server utilization & 28\% & Infrastructure monitoring \\
+Annual electricity use & 1.8 GWh & Facilities data \\
+Water use for cooling & Site estimate unavailable & Evidence gap \\
+Assets within two years of support end & 37\% & Asset register \\
+Suppliers offering take-back & 2 of 5 & Contract review \\
+Potential model-efficiency reduction in compute/task & 35\% & Technical benchmark \\
+Expected service growth & 22\% over three years & Portfolio forecast \\
+\end{longtable}
+
+\subsection{Step-by-Step Analysis}
+The sequence below is intended to make the analysis reproducible and to ensure
+that evidence, economics, governance, and implementation develop together.
+
+\begin{longtable}{@{}p{0.07\textwidth}p{0.55\textwidth}p{0.30\textwidth}@{}}
+\caption{Analytical sequence}
+\label{tab:comp-ch13-analysis-steps}\\
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Define a clinically meaningful functional unit and map material, energy, water, data, and service flows. & Evidence and responsible owner to be recorded \\
+2 & Apply the circularity hierarchy before assuming that new acquisition is required. & Evidence and responsible owner to be recorded \\
+3 & Compare prevention, reduction, maintenance, sharing, reuse, refurbishment, replacement, and recovery options. & Evidence and responsible owner to be recorded \\
+4 & Assess whether AI-enabled forecasting or maintenance changes an actual resource decision. & Evidence and responsible owner to be recorded \\
+5 & Measure resource intensity and total demand to detect rebound. & Evidence and responsible owner to be recorded \\
+6 & Evaluate resilience, equity, supplier dependence, burden transfer, and final disposition. & Evidence and responsible owner to be recorded \\
+\end{longtable}
+
+\subsection{Illustrative Outputs}
+The outputs in Table~\ref{tab:comp-ch13-outputs} show how technical,
+clinical, operational, economic, equity, and governance findings should be kept
+visible rather than compressed into a single favourable or unfavourable score.
+
+\begin{longtable}{@{}p{0.30\textwidth}p{0.24\textwidth}p{0.38\textwidth}@{}}
+\caption{Illustrative model and decision outputs}
+\label{tab:comp-ch13-outputs}\\
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Highest immediate opportunity & Consolidation and shared capacity & Low utilization indicates avoidable duplication \\
+Efficiency effect & Potentially material & May be offset by service growth \\
+Critical evidence gap & Cooling-water and embodied-impact data & Prevents complete comparison \\
+Support risk & High for 37\% of assets & Requires staged transition \\
+Preferred decision & Demand reduction plus shared-capacity and supportability programme & Delay broad replacement \\
+\end{longtable}
+
+\subsection{Sensitivity, Uncertainty, and Subgroups}
+At minimum, the completed analysis should vary the parameters most likely to
+change the decision, test at least one credible alternative model structure, and
+report subgroup results separately where performance, access, response, burden,
+or opportunity cost may differ. Deterministic analysis should identify thresholds;
+probabilistic analysis should be used where credible parameter distributions and
+correlations are available. Scenario analysis is preferable when structural or
+future uncertainty cannot be represented defensibly by one probability model.
+
+The record should distinguish uncertainty that can be reduced through evidence,
+uncertainty that can be managed through safeguards, and uncertainty that remains
+too consequential to accept. Missing evidence should not be represented as an
+average or neutral value without justification.
+
+\subsection{Interpretation and Recommendation}
+Adopt a portfolio programme that first reduces unnecessary compute and storage, consolidates safe shared capacity, maintains supported assets, and uses replacement selectively where security, reliability, or efficiency justify it. Require supplier information, take-back, and traceable disposition.
+
+The recommendation is conditional rather than permanent. It applies only to the
+specified population, setting, intervention configuration, evidence cut-off, and
+version. The following conditions should be incorporated into the approval,
+contract, implementation, monitoring, or renewal record:
+
+\begin{itemize}
+ \item resource intensity and absolute demand are both monitored.
+ \item safety, cybersecurity, resilience, and service continuity constrain every circular option.
+ \item supplier and product data are sufficient for maintenance and recovery decisions.
+ \item benefits and burdens beyond the hospital boundary are documented.
+ \item future procurement includes durability, support, interoperability, take-back, and residual-value requirements.
+\end{itemize}
+
+\subsection{Decision Statement}
+\begin{quote}
+For the specified decision problem and comparator set, the institution should
+\emph{[proceed / proceed with conditions / redesign / pilot / restrict / defer /
+replace / retire]}. The decision applies to \emph{[population, setting, version,
+and evidence period]}, is owned by \emph{[accountable authority]}, and will be
+reviewed on \emph{[date]} or earlier if \emph{[trigger events]} occur. The
+evidence, assumptions, unresolved uncertainty, mandatory safeguards, monitoring
+thresholds, and exit arrangements are recorded in the accompanying dossier.
+\end{quote}

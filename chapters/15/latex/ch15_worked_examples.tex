@@ -1,0 +1,176 @@
+% Chapter 15 worked example. Included by ch15_resources.tex.
+\section{Worked Example: Edge, Local, or Cloud Diagnostic AI}
+\label{sec:comp-ch15-worked-example}
+
+\subsection{Purpose and Status}
+This worked example demonstrates how the methods in Chapter~15 can be
+translated into a reviewable institutional decision. All numerical inputs are
+synthetic unless a source is identified explicitly. They are intended to show the
+logic of the analysis, not to report empirical findings or establish a universal
+threshold. Local use requires replacement of the assumptions with current,
+versioned evidence and approval through the relevant clinical, managerial,
+economic, legal, technical, and governance processes.
+
+A diagnostic service is comparing three deployment architectures: upgrade existing edge infrastructure, replace it with efficient local infrastructure, or use a shared cloud service. Clinical performance is assumed equivalent, but lifecycle cost, energy, water, hardware, data transfer, resilience, residual value, and exit differ. 
+
+\subsection{Decision Problem and Comparators}
+\textbf{Decision problem.} Which architecture offers the strongest sustainable value after conventional and circularity-related effects are considered?
+
+The comparator set is deliberately broader than the existing pathway. This prevents
+a new technology from receiving a lower evidentiary threshold than staffing,
+workflow, shared-service, conventional digital, or no-change alternatives.
+
+\begin{longtable}{@{}p{0.08\textwidth}p{0.84\textwidth}@{}}
+\caption{Comparators for the Chapter 15 worked example}
+\label{tab:comp-ch15-comparators}\\
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Upgrade existing edge servers \\
+2 & Replace with new local infrastructure \\
+3 & Shared cloud service \\
+4 & Reduce model size and data retention before selecting architecture \\
+\end{longtable}
+
+\subsection{Model and Decision Structure}
+The analytical structure should follow the decision rather than the available
+software. The team should map the causal pathway from intervention input to
+information, human decision, action, outcome, resource consequence, and review.
+The structure should also identify capacity constraints, uncertainty, subgroup
+variation, implementation requirements, and events that would change the
+recommendation.
+
+A compact quantitative relationship used in this example is:
+\begin{equation}
+\mathrm{CANB}_j=\lambda\Delta E_j-\Delta C_j-\Delta \mathrm{EC}_j+\Delta \mathrm{RV}_j+\Delta \mathrm{SRV}_j
+\label{eq:comp-ch15-key-relationship}
+\end{equation}
+The equation is an organizing aid rather than a substitute for disaggregated evidence,
+qualitative findings, or mandatory safeguards. Its variables and interpretation must
+be defined in the local protocol.
+
+\subsection{Synthetic Parameters and Evidence Sources}
+Table~\ref{tab:comp-ch15-parameters} provides the base-case inputs. A
+production analysis should add parameter distributions, correlations, structural
+alternatives, data dates, system versions, and evidence-confidence ratings.
+
+\begin{longtable}{@{}p{0.32\textwidth}p{0.22\textwidth}p{0.38\textwidth}@{}}
+\caption{Synthetic parameters for the Chapter 15 worked example}
+\label{tab:comp-ch15-parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Annual validated analyses & 1,200,000 & Functional-unit denominator \\
+Five-year PV cost: edge upgrade & EUR 3.2 million & Lifecycle model \\
+Five-year PV cost: local replacement & EUR 4.1 million & Lifecycle model \\
+Five-year PV cost: cloud & EUR 3.7 million & Lifecycle model \\
+Operational energy per 1,000 analyses & Edge 42; local 27; cloud allocation 19 kWh & Illustrative inputs \\
+Expected hardware residual value & Edge EUR 70,000; local EUR 240,000 & Recovery estimate \\
+Maximum tolerable service interruption & 30 minutes & Clinical continuity requirement \\
+Annual demand growth & 18\% & Scenario assumption \\
+\end{longtable}
+
+\subsection{Step-by-Step Analysis}
+The sequence below is intended to make the analysis reproducible and to ensure
+that evidence, economics, governance, and implementation develop together.
+
+\begin{longtable}{@{}p{0.07\textwidth}p{0.55\textwidth}p{0.30\textwidth}@{}}
+\caption{Analytical sequence}
+\label{tab:comp-ch15-analysis-steps}\\
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Define the functional unit, perspective, system boundary, horizon, and comparators. & Evidence and responsible owner to be recorded \\
+2 & Combine lifecycle costing with physical energy, water, material, residual-value, and resilience evidence. & Evidence and responsible owner to be recorded \\
+3 & Report impacts separately where monetization is not credible. & Evidence and responsible owner to be recorded \\
+4 & Estimate resource intensity and absolute demand, including rebound under growth scenarios. & Evidence and responsible owner to be recorded \\
+5 & Use circularity-adjusted net benefit only with consistent valuation, no double counting, and explicit limitations. & Evidence and responsible owner to be recorded \\
+6 & Apply multi-criteria deliberation after mandatory safety, privacy, cybersecurity, continuity, and equity safeguards are met. & Evidence and responsible owner to be recorded \\
+\end{longtable}
+
+\subsection{Illustrative Outputs}
+The outputs in Table~\ref{tab:comp-ch15-outputs} show how technical,
+clinical, operational, economic, equity, and governance findings should be kept
+visible rather than compressed into a single favourable or unfavourable score.
+
+\begin{longtable}{@{}p{0.30\textwidth}p{0.24\textwidth}p{0.38\textwidth}@{}}
+\caption{Illustrative model and decision outputs}
+\label{tab:comp-ch15-outputs}\\
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Lowest operational energy intensity & Cloud under the stated allocation & Allocation and location uncertainty are material \\
+Lowest five-year PV cost & Edge upgrade & Support and resilience limits may offset cost advantage \\
+Best local control and residual value & Local replacement & Higher initial and embodied resource burden \\
+Strongest scalability & Cloud & Vendor dependence, data transfer, and exit require controls \\
+Preferred decision & Optimize demand, then use a hybrid local/shared architecture & Robust across uncertainty \\
+\end{longtable}
+
+\subsection{Sensitivity, Uncertainty, and Subgroups}
+At minimum, the completed analysis should vary the parameters most likely to
+change the decision, test at least one credible alternative model structure, and
+report subgroup results separately where performance, access, response, burden,
+or opportunity cost may differ. Deterministic analysis should identify thresholds;
+probabilistic analysis should be used where credible parameter distributions and
+correlations are available. Scenario analysis is preferable when structural or
+future uncertainty cannot be represented defensibly by one probability model.
+
+The record should distinguish uncertainty that can be reduced through evidence,
+uncertainty that can be managed through safeguards, and uncertainty that remains
+too consequential to accept. Missing evidence should not be represented as an
+average or neutral value without justification.
+
+\subsection{Interpretation and Recommendation}
+Reduce model and data demand first, retain local capacity for time-critical and continuity-sensitive functions, and use shared infrastructure where allocation, security, location, portability, and exit evidence are acceptable. Report monetary and physical outcomes separately and revisit the architecture as demand and technology change.
+
+The recommendation is conditional rather than permanent. It applies only to the
+specified population, setting, intervention configuration, evidence cut-off, and
+version. The following conditions should be incorporated into the approval,
+contract, implementation, monitoring, or renewal record:
+
+\begin{itemize}
+ \item clinical effectiveness is comparable across architectures.
+ \item the functional unit and allocation rules are documented.
+ \item absolute demand and rebound are monitored, not only efficiency per task.
+ \item resilience, privacy, cybersecurity, and exit are non-compensatory.
+ \item the decision record reports which effects are monetized, disaggregated, or considered through deliberation.
+\end{itemize}
+
+\subsection{Decision Statement}
+\begin{quote}
+For the specified decision problem and comparator set, the institution should
+\emph{[proceed / proceed with conditions / redesign / pilot / restrict / defer /
+replace / retire]}. The decision applies to \emph{[population, setting, version,
+and evidence period]}, is owned by \emph{[accountable authority]}, and will be
+reviewed on \emph{[date]} or earlier if \emph{[trigger events]} occur. The
+evidence, assumptions, unresolved uncertainty, mandatory safeguards, monitoring
+thresholds, and exit arrangements are recorded in the accompanying dossier.
+\end{quote}

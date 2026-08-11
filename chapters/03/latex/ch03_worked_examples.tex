@@ -1,0 +1,174 @@
+% Chapter 3 worked example. Included by ch03_resources.tex.
+\section{Worked Example: Hospital Command Dashboard and Patient Flow}
+\label{sec:comp-ch03-worked-example}
+
+\subsection{Purpose and Status}
+This worked example demonstrates how the methods in Chapter~3 can be
+translated into a reviewable institutional decision. All numerical inputs are
+synthetic unless a source is identified explicitly. They are intended to show the
+logic of the analysis, not to report empirical findings or establish a universal
+threshold. Local use requires replacement of the assumptions with current,
+versioned evidence and approval through the relevant clinical, managerial,
+economic, legal, technical, and governance processes.
+
+A tertiary hospital plans a command dashboard combining admissions, discharges, bed status, staffing, diagnostics, transport, and forecast demand. Leaders expect faster decisions, but current indicators have inconsistent definitions and no explicit action owners. 
+
+\subsection{Decision Problem and Comparators}
+\textbf{Decision problem.} Should the hospital implement an AI-enhanced command dashboard, redesign the existing operational review process, or combine both through a staged signal-to-action intervention?
+
+The comparator set is deliberately broader than the existing pathway. This prevents
+a new technology from receiving a lower evidentiary threshold than staffing,
+workflow, shared-service, conventional digital, or no-change alternatives.
+
+\begin{longtable}{@{}p{0.08\textwidth}p{0.84\textwidth}@{}}
+\caption{Comparators for the Chapter 3 worked example}
+\label{tab:comp-ch03-comparators}\\
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Option} & \textbf{Comparator or strategy} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Current morning operational meeting and static reports \\
+2 & Standardized dashboard without predictive functions \\
+3 & AI-enhanced dashboard with demand forecasts and anomaly detection \\
+4 & Targeted process redesign for discharge, imaging, and transport bottlenecks \\
+\end{longtable}
+
+\subsection{Model and Decision Structure}
+The analytical structure should follow the decision rather than the available
+software. The team should map the causal pathway from intervention input to
+information, human decision, action, outcome, resource consequence, and review.
+The structure should also identify capacity constraints, uncertainty, subgroup
+variation, implementation requirements, and events that would change the
+recommendation.
+
+A compact quantitative relationship used in this example is:
+\begin{equation}
+T_{\mathrm{action}}=T_{\mathrm{delivery}}+T_{\mathrm{review}}+T_{\mathrm{response}}
+\label{eq:comp-ch03-key-relationship}
+\end{equation}
+The equation is an organizing aid rather than a substitute for disaggregated evidence,
+qualitative findings, or mandatory safeguards. Its variables and interpretation must
+be defined in the local protocol.
+
+\subsection{Synthetic Parameters and Evidence Sources}
+Table~\ref{tab:comp-ch03-parameters} provides the base-case inputs. A
+production analysis should add parameter distributions, correlations, structural
+alternatives, data dates, system versions, and evidence-confidence ratings.
+
+\begin{longtable}{@{}p{0.32\textwidth}p{0.22\textwidth}p{0.38\textwidth}@{}}
+\caption{Synthetic parameters for the Chapter 3 worked example}
+\label{tab:comp-ch03-parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Parameter} & \textbf{Base value} & \textbf{Source or interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Average daily admissions & 312 & Operations data \\
+Mean bed occupancy & 94\% & Capacity dashboard \\
+Median data latency & 95 minutes & Interface audit \\
+Indicators without named action owner & 42\% & Dashboard inventory \\
+Forecast mean absolute percentage error & 13\% & Retrospective validation \\
+Estimated annual dashboard cost & EUR 265,000 & Lifecycle-cost estimate \\
+\end{longtable}
+
+\subsection{Step-by-Step Analysis}
+The sequence below is intended to make the analysis reproducible and to ensure
+that evidence, economics, governance, and implementation develop together.
+
+\begin{longtable}{@{}p{0.07\textwidth}p{0.55\textwidth}p{0.30\textwidth}@{}}
+\caption{Analytical sequence}
+\label{tab:comp-ch03-analysis-steps}\\
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Step} & \textbf{Required work} & \textbf{Decision record} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+1 & Define the operational decisions, decision windows, and accountable owners before selecting indicators. & Evidence and responsible owner to be recorded \\
+2 & Separate observed values, model estimates, forecasts, and recommendations. & Evidence and responsible owner to be recorded \\
+3 & Create an indicator dictionary with numerator, denominator, exclusions, latency, and limitations. & Evidence and responsible owner to be recorded \\
+4 & Map each signal to a feasible action and at least one balancing measure. & Evidence and responsible owner to be recorded \\
+5 & Test forecast value against a standardized non-predictive dashboard and targeted process redesign. & Evidence and responsible owner to be recorded \\
+6 & Measure action latency, downstream congestion, workload, and the consequences of recommendations that cannot be implemented. & Evidence and responsible owner to be recorded \\
+\end{longtable}
+
+\subsection{Illustrative Outputs}
+The outputs in Table~\ref{tab:comp-ch03-outputs} show how technical,
+clinical, operational, economic, equity, and governance findings should be kept
+visible rather than compressed into a single favourable or unfavourable score.
+
+\begin{longtable}{@{}p{0.30\textwidth}p{0.24\textwidth}p{0.38\textwidth}@{}}
+\caption{Illustrative model and decision outputs}
+\label{tab:comp-ch03-outputs}\\
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Output} & \textbf{Result} & \textbf{Interpretation} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Principal failure in current design & No action ownership & Information does not reliably change decisions \\
+Forecast technical performance & Potentially useful & Requires local operational validation \\
+Main value constraint & High occupancy and limited downstream capacity & Forecasting cannot create beds or staff \\
+Preferred intervention & Signal-to-action redesign plus staged dashboard & Dashboard alone is insufficient \\
+Primary monitoring outcome & Decision and action latency & Views and logins are secondary \\
+\end{longtable}
+
+\subsection{Sensitivity, Uncertainty, and Subgroups}
+At minimum, the completed analysis should vary the parameters most likely to
+change the decision, test at least one credible alternative model structure, and
+report subgroup results separately where performance, access, response, burden,
+or opportunity cost may differ. Deterministic analysis should identify thresholds;
+probabilistic analysis should be used where credible parameter distributions and
+correlations are available. Scenario analysis is preferable when structural or
+future uncertainty cannot be represented defensibly by one probability model.
+
+The record should distinguish uncertainty that can be reduced through evidence,
+uncertainty that can be managed through safeguards, and uncertainty that remains
+too consequential to accept. Missing evidence should not be represented as an
+average or neutral value without justification.
+
+\subsection{Interpretation and Recommendation}
+Implement a standardized operational dashboard first, with explicit action ownership and decision thresholds. Add forecasting functions only after the data-latency and response-pathway requirements have been met and tested in simulation and a controlled pilot.
+
+The recommendation is conditional rather than permanent. It applies only to the
+specified population, setting, intervention configuration, evidence cut-off, and
+version. The following conditions should be incorporated into the approval,
+contract, implementation, monitoring, or renewal record:
+
+\begin{itemize}
+ \item all priority indicators have definitions, owners, decision windows, and balancing measures.
+ \item data latency remains within the operational window.
+ \item forecast uncertainty is displayed and observed values are distinguishable from predictions.
+ \item the pilot measures action and outcome changes rather than views or user satisfaction alone.
+ \item a governance process reviews gaming, surveillance concerns, and unequal workload effects.
+\end{itemize}
+
+\subsection{Decision Statement}
+\begin{quote}
+For the specified decision problem and comparator set, the institution should
+\emph{[proceed / proceed with conditions / redesign / pilot / restrict / defer /
+replace / retire]}. The decision applies to \emph{[population, setting, version,
+and evidence period]}, is owned by \emph{[accountable authority]}, and will be
+reviewed on \emph{[date]} or earlier if \emph{[trigger events]} occur. The
+evidence, assumptions, unresolved uncertainty, mandatory safeguards, monitoring
+thresholds, and exit arrangements are recorded in the accompanying dossier.
+\end{quote}
