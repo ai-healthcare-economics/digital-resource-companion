@@ -19,7 +19,7 @@ Most readers should start with the [Web Companion](https://ai-healthcare-economi
 chapters/          Core records, reference guides, analytical modules, and chapter process maps
 worked_examples/   Complete synthetic worked cases and the common case-analysis method
 process/           Master lifecycle, decision stages, and dependency maps
-bundles/           Consolidated core forms and workbooks
+bundles/           Consolidated core forms, workbooks, and Core Tools convenience pack
 publications/      Definitive printable Digital Resource Companion
 catalogs/          Resource, worked-case, Python-module, relationship, and figure catalogs
 docs/              GitHub Pages website
