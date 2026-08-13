@@ -24,7 +24,7 @@ The actual script retains its stable numeric filename inside the `python/` folde
 
 ### Jupyter notebook
 
-Use the notebook when you prefer a stepwise, inspectable workflow for learning, review, teaching, or exploratory analysis. Open the `.ipynb` file in JupyterLab, VS Code, or Google Colab. The notebook and script call the same implementation in `src/`.
+Use the notebook when you prefer a stepwise, inspectable workflow for learning, review, or exploratory analysis. Open the `.ipynb` file in JupyterLab, VS Code, or Google Colab. The notebook and script call the same implementation in `src/`.
 
 ## Inputs
 

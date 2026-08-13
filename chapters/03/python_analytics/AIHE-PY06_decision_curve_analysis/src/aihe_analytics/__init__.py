@@ -1,1 +1,1 @@
-"""AI and Healthcare Economics teaching analytics package."""
+"""AI and Healthcare Economics analytical companion package."""

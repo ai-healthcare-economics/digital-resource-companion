@@ -1,43 +1,21 @@
 # Chapter 3: Human–AI Decision Support and Managerial Action
 
-**Part I: Managerial and Economic Foundations**
+**Part I — Managerial and Economic Foundations**
 
-**Release:** V1.0
+This folder contains the canonical chapter-aligned records, guides, analytical modules, and process map. Complete worked cases are maintained once in the top-level `worked_examples/` folder.
 
-Begin with the book chapter. The sections below distinguish the essential reader route from optional specialist and technical source material.
-
-## Start here
-
-- [Chapter web page](../../docs/chapters/03.html)
-- [Chapter process map](../../docs/process/chapters/03.html)
-
-## Essential institutional records
-
-- **AIHE-C04 — Human Oversight and Accountability Matrix**: `core/AIHE-C04`
+## Core resources
+- [AIHE-C04 — Human Oversight and Accountability Matrix](core/AIHE-C04)
 
 ## Worked examples
+- [AIHE-CASE03 — Deterioration Alert Under Constrained Review Capacity](../../worked_examples/AIHE-CASE03_deterioration_alert_under_constrained_review_capacity)
+- [AIHE-CASE03B — Hospital Command Dashboard and Patient Flow](../../worked_examples/AIHE-CASE03B_hospital_command_dashboard_and_patient_flow)
 
-- **AIHE-CASE03 — Deterioration Alert Under Constrained Review Capacity**: `worked_examples/AIHE-CASE03_deterioration_alert_under_constrained_review_capacity`
-- **AIHE-CASE03B — Hospital Command Dashboard and Patient Flow**: `worked_examples/AIHE-CASE03B_hospital_command_dashboard_and_patient_flow`
+## Analytical modules
+- [AIHE-PY06 — Decision-curve analysis](python_analytics/AIHE-PY06_decision_curve_analysis)
+- [AIHE-PY21 — Discrete-event simulation of hospital flow](python_analytics/AIHE-PY21_discrete_event_simulation_of_hospital_flow)
+- [AIHE-PY34 — Time-series forecasting for demand, capacity, and budget planning](python_analytics/AIHE-PY34_time_series_forecasting_for_demand_capacity_and_budget_planning)
+- [AIHE-PY35 — Constrained resource-allocation optimization](python_analytics/AIHE-PY35_constrained_resource_allocation_optimization)
 
-## Recommended supporting resources
-
-- **AIHE-O — HOAM Accountability Workbook** — Assign accountable and responsible owners, consultation, information, escalation, pause, update, restart, and retirement authority.
-
-## Advanced and publication source files
-
-- Python Analytics: **AIHE-PY06 — Decision-curve analysis**
-- Python Analytics: **AIHE-PY21 — Discrete-event simulation of hospital flow**
-- Python Analytics: **AIHE-PY34 — Time-series forecasting for demand, capacity, and budget planning**
-- Python Analytics: **AIHE-PY35 — Constrained resource-allocation optimization**
-- LaTeX source: `ch03_worked_examples.tex`
-- LaTeX source: `ch03_supplemental_resources.tex`
-- LaTeX source: `ch03_reference_resources.tex`
-
-## Full Chapter library
-
-The folder tree remains the canonical source. Most readers should use the Chapter web page, essential records, or worked example before opening the full library.
-
-## Responsible use
-
-Worked examples are synthetic unless explicitly stated. Replace assumptions with local evidence, preserve versions and accountable ownership, and apply applicable clinical, legal, privacy, cybersecurity, procurement, accreditation, and HTA requirements.
+## Chapter process
+- [Process map](flow/PROCESS_FLOW.md)

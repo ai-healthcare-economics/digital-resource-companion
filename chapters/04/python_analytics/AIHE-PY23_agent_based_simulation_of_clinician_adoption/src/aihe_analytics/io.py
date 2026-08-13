@@ -43,7 +43,7 @@ def write_metadata(output_dir: str | Path, module_id: str, input_path: str | Pat
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "python_version": sys.version,
         "platform": platform.platform(),
-        "teaching_use_only": True,
+        "synthetic_example": True,
     }
     if extra:
         payload.update(extra)
